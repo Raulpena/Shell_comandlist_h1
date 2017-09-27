@@ -1,0 +1,14 @@
+This one is for look for diferences between 2 files
+diff file1.txt file2.txt
+
+The command -y is for separate
+diff file1.txt file2.txt -y
+
+This calculate the using the file .csv
+awk -F ',' '{print$2/($3*$3)}' fileimc.csv
+
+Almost the same as the previous one, but using percent
+awk -F ',' 'FNR==NR{s+=$2;next;} {pritf"%s\t%s\t%s%%\n",$1,$2,100*$2/s}' fileimc.csv fileimc.csv
+
+This one print the exponential function 
+seq 10 | awk '{print $1 exp($1)}'
