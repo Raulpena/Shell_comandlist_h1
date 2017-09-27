@@ -4,7 +4,7 @@ diff file1.txt file2.txt
 The command -y is for separate
 diff file1.txt file2.txt -y
 
-This calculate the using the file .csv
+This calculate the IMC using the file .csv
 awk -F ',' '{print$2/($3*$3)}' fileimc.csv
 
 Almost the same as the previous one, but using percent
